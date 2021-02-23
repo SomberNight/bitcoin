@@ -628,9 +628,9 @@ bool MemPoolAccept::PreChecks(ATMPArgs& args, Workspace& ws)
                         break;
                     }
                 }
-                if (fReplacementOptOut) {
-                    return state.Invalid(TxValidationResult::TX_MEMPOOL_POLICY, "txn-mempool-conflict");
-                }
+                //if (fReplacementOptOut) {
+                //    return state.Invalid(TxValidationResult::TX_MEMPOOL_POLICY, "txn-mempool-conflict");
+                //}
 
                 setConflicts.insert(ptxConflicting->GetHash());
             }
